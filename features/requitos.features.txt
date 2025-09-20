@@ -2,3 +2,8 @@ Scenario: Criar nova tarefa
   Given que o usuário acessa o sistema
   When ele cria uma tarefa "Estudar Git"
   Then a tarefa aparece na lista
+
+Scenario: Listar tarefas
+  Given que existem tarefas cadastradas
+  When o usuário solicita a listagem
+  Then o sistema mostra todas as tarefas
